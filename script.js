@@ -28,4 +28,23 @@ function sum(arr){
     }
     return rez;
 }
-console.log(sum(range(1,10)));
+
+// В качестве бонуса дополните функцию range, чтобы она могла принимать
+// необязательный третий аргумент – шаг для построения массива. Если он не
+// задан, шаг равен единице.Убедитесь, что она работает с отрицательным шагом
+
+function range(str, fnsh, stp){
+    if (stp<0){
+        for (let i=fnsh; i>=str; i+=stp ){
+            arr.push(i);
+        }
+     } else { if (stp>0) {
+            for (let i=str; i<=fnsh; i+=stp ){
+                arr.push(i);
+            }
+        }
+    }
+    return arr;
+}
+console.log(range(1,10,-2));
+
