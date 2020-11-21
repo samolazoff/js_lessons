@@ -20,13 +20,12 @@ function range(str, fnsh){
 // возвращающую их сумму. 
 
 
-
-function sum(str, fnsh){
-    range(str, fnsh);
+function sum(arr){
+    range;
     let rez=0;
     for (let i=0; i<arr[arr.length-1]; i++){
         rez+=arr[i];
     }
     return rez;
 }
-console.log(sum(1,10));
+console.log(sum(range(1,10)));
