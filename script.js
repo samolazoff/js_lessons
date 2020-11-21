@@ -5,13 +5,28 @@
 // диапазона, и возвращающую массив, который содержит все числа из него,
 // включая начальное и конечное.
 
+let arr=[];
 
 function range(str, fnsh){
-    let arr=[];
     for (let i=str; i<=fnsh; i++ ){
         arr.push(i);
     }
-    console.log(arr);
-
+    return arr;
 }
-range(5,20);
+
+// Task №2
+
+// Напишите функцию sum, принимающую массив чисел и
+// возвращающую их сумму. 
+
+
+
+function sum(str, fnsh){
+    range(str, fnsh);
+    let rez=0;
+    for (let i=0; i<arr[arr.length-1]; i++){
+        rez+=arr[i];
+    }
+    return rez;
+}
+console.log(sum(1,10));
