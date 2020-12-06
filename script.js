@@ -14,6 +14,11 @@
 //     return arr;
 // }
 
+
+
+
+//********************************************************************************
+
 // Task №2
 
 // Напишите функцию sum, принимающую массив чисел и
@@ -29,6 +34,7 @@
 //     return rez;
 // }
 
+//********************************************************************************
 
 
 // Task №3
@@ -57,21 +63,83 @@
 // console.log(range(1,10,-2));
 
 
+//********************************************************************************
 
 
-
+// Task №5
 // Рандом между числами с округлением
 
 
+// function getRandom(min, max){
+//     return Math.floor(Math.random()*(max-min+1)+min);
+// }
+// console.log(getRandom(10,20));
+
+
+
+//********************************************************************************
+
+
+// Task №6
+//short quoted notation
+
+
+
+// const name='Romick';
+// const age =31;
+// function getAge(){
+//     return age;
+// }
+// console.log(`My name is ${name}. I am ${getAge()} years old!!!`);
+
+
+//********************************************************************************
+
+
+// Task №7
+
+// Simple, given a string of words, return the length of the shortest word(s).
+// String will never be empty and you do not need to account for different data types.
 
 
 
 
-function getRandom(min, max){
-    return Math.floor(Math.random()*(max-min+1)+min);
-}
-console.log(getRandom(10,20));
+// function findShort(s){
+//     let arr=[];
+//     let all=[];
+//     for(let i=0 ; i<s.length; i++){
+//         if(s.charAt(i)===' '){
+//             arr.push(i)}
+//         }
+        
+//     arr.push(s.length);
+//     console.log(arr);
+
+//     all.push(arr[0]);
+//     for(let i=arr.length-1; i>0; --i){
+//         all.push(arr[i]-arr[i-1]-1);
+//     }
+//     console.log(all);  
+//     return Math.min.apply(null, all);
+// }
 
 
 
 
+
+
+
+
+
+
+ 
+// function findShort(s){
+//     return Math.min.apply(null, s.split(' ').map(w => w.length));
+//   }
+
+
+
+
+
+
+//********************************************************************************
