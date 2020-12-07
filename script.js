@@ -143,3 +143,61 @@
 
 
 //********************************************************************************
+
+// Task №8
+
+
+// changes over time
+
+
+// let i=0;
+// setInterval(function(){
+//     console.log(++i)
+// }, 1000)
+
+
+
+
+
+
+// let i=0;
+// const interval = setInterval(function(){
+//     i===5?clearInterval(interval):console.log(++i)
+// },1500);
+
+
+//********************************************************************************
+
+
+// Task №9
+
+
+// You are given an array of n+1 integers 1 through n. In addition there is a single duplicate integer.
+// The array is unsorted.
+// An example valid array would be [3, 2, 5, 1, 3, 4]. It has the integers 1 through 5 and 3 is duplicated. [1, 2, 4, 5, 5] 
+// would not be valid as it is missing 3.
+// You should return the duplicate value as a single integer.
+
+
+function findDup( arr ){
+    let duplicateValue=0;
+    for(let i=1; i<arr.length; i++){
+      let rep=0;
+      for(let num of arr){
+       if(i===num){rep++}
+         if(rep>1){
+           duplicateValue=i;
+           break;
+        }
+       }
+        if(rep>1){
+           duplicateValue=i;
+           break;
+        }
+    }
+    return duplicateValue;
+  }
+
+
+  
+  //********************************************************************************
