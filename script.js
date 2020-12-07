@@ -179,25 +179,57 @@
 // You should return the duplicate value as a single integer.
 
 
-function findDup( arr ){
-    let duplicateValue=0;
-    for(let i=1; i<arr.length; i++){
-      let rep=0;
-      for(let num of arr){
-       if(i===num){rep++}
-         if(rep>1){
-           duplicateValue=i;
-           break;
-        }
-       }
-        if(rep>1){
-           duplicateValue=i;
-           break;
-        }
-    }
-    return duplicateValue;
-  }
+// function findDup( arr ){
+//     let duplicateValue=0;
+//     for(let i=1; i<arr.length; i++){
+//       let rep=0;
+//       for(let num of arr){
+//        if(i===num){rep++}
+//          if(rep>1){
+//            duplicateValue=i;
+//            break;
+//         }
+//        }
+//         if(rep>1){
+//            duplicateValue=i;
+//            break;
+//         }
+//     }
+//     return duplicateValue;
+//   }
 
 
-  
-  //********************************************************************************
+
+//********************************************************************************
+
+
+
+// Task №10
+
+
+//   Дана переменная со значением 5px и переменная со значением 6px. 
+//   Найдите сумму пикселей из значений этих переменных и выведите ее на экран.
+
+
+// const a='5px',
+//     b='6px';
+// console.log(parseInt(a)+parseInt(b));
+
+
+//********************************************************************************
+
+
+
+// Task №11
+
+
+//  Дана переменная со значением 5.5px и переменная со значением 6.25px.
+// Найдите сумму пикселей из значений этих переменных и выведите ее на экран.
+// До второй запятой.
+
+const a='5.5px',
+    b='6.2525px';
+console.log((parseFloat(a)+parseFloat(b)).toFixed(2));
+
+
+//********************************************************************************
