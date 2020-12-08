@@ -227,9 +227,40 @@
 // Найдите сумму пикселей из значений этих переменных и выведите ее на экран.
 // До второй запятой.
 
-const a='5.5px',
-    b='6.2525px';
-console.log((parseFloat(a)+parseFloat(b)).toFixed(2));
+// const a='5.5px',
+//     b='6.2525px';
+// console.log((parseFloat(a)+parseFloat(b)).toFixed(2));
 
 
 //********************************************************************************
+
+
+// Task №12
+
+
+// ПЕРЕВЕРНУТЬ СТРОКУ!
+
+// const text='Hello World';
+// const reverseText=text.split('').reverse().join('');
+// console.log(reverseText);
+
+
+
+
+//********************************************************************************
+
+
+// Task №13
+// Welcome. In this kata, you are asked to square every digit of a number and concatenate them.
+
+// For example, if we run 9119 through the function, 811181 will come out, because 92 is 81 and 12 is 1.
+
+// Note: The function accepts an integer and returns an integer
+
+function squareDigits(num){
+    return rez=String(num)
+        .split('')
+        .map(elem=>elem**2)
+        .join('');
+}
+console.log(squareDigits(999));
