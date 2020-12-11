@@ -257,10 +257,73 @@
 
 // Note: The function accepts an integer and returns an integer
 
-function squareDigits(num){
-    return rez=String(num)
-        .split('')
-        .map(elem=>elem**2)
-        .join('');
-}
-console.log(squareDigits(999));
+// function squareDigits(num){
+//     return rez=String(num)
+//         .split('')
+//         .map(elem=>elem**2)
+//         .join('');
+// }
+// console.log(squareDigits(999));
+
+
+
+
+//********************************************************************************
+
+
+// Task №14
+// Create a function that returns a villain name based on the user's birthday. 
+// The birthday will be passed to the function as a valid Date object, so for simplicity,
+//  there's no need to worry about converting strings to dates.
+
+
+
+
+
+// function getVillainName(birthday){
+//     let rez;
+//     const m = ["Evil","Vile","Cruel","Trashy","Despicable","Embarrassing","Disreputable","Atrocious","Twirling","Orange","Terrifying","Awkward"];
+//     const d = ["Mustache","Pickle","Hood Ornament","Raisin","Recycling Bin","Potato","Tomato","House Cat","Teaspoon","Laundry Basket"];
+//     let day = birthday.getDate();
+//     let month = +birthday.getMonth();
+//     return rez=`The ${m[month]} ${d[day%10]}`;
+//   }
+
+
+//********************************************************************************
+
+
+// Task №14
+
+// The main idea is to count all the occurring characters in a string. If you have a string like aba, then the result should be {'a': 2, 'b': 1}.
+
+// What if the string is empty? Then the result should be empty object literal, {}.
+
+
+
+
+// function count (string) {  
+//     let obj={
+//     };
+//     let stringArr=string.split('');
+//     for(let letter of stringArr){
+//         if( letter=='a'){
+//             obj["a"]=0;
+//         }
+//         if( letter==='b'){
+//             obj["b"]=0;
+//         }
+//      }
+//     for(let letter of stringArr){
+//         if( letter=='a'){
+//             obj["a"]+=1
+//         }
+//         if( letter==='b'){
+//             obj["b"]+=1
+//         }
+//      }
+//      return obj;
+//     }
+// console.log(count("aa"));
+
+
