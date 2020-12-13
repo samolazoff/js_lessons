@@ -45,7 +45,7 @@
 //     document.getElementById('hello').style.fontSize='80px';
 //     document.getElementById('hello').style.backgroundColor='yellow';
 // },3000);
-const heading = document.getElementById('hello');
+// const heading = document.getElementById('hello');
 // setTimeout(()=>{
 //     addStylesYo(heading);
 
@@ -59,7 +59,7 @@ const heading = document.getElementById('hello');
 // const heading2 = document.getElementsByTagName('h2')[0]; //обращение по тегу
 // const heading2 =document.querySelector('h2') //обращение по CSS через тег
 // const heading2 =document.querySelector('#super') //обращение по CSS  через id
-const heading2 =document.querySelector('.puper') //обращение по CSS через class
+// const heading2 =document.querySelector('.puper') //обращение по CSS через class
 
 // console.log(heading2);
 // heading.onclick=()=>{
@@ -68,3 +68,8 @@ const heading2 =document.querySelector('.puper') //обращение по CSS �
 // heading2.onclick=()=>{
 //     console.log(heading2.textContent);
 // }
+
+// const elem= document.querySelector('h1');
+// // elem.innerHTML='@@@@';    //changes text of tag
+// // elem.innerHTML='<br>Ooops'; //changes text of tag with new tag
+// console.log(elem.innerHTML);
