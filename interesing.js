@@ -95,23 +95,43 @@ const txt=document.querySelector('#txt');
 const refs = document.querySelectorAll('a');
 let texts = ['text1', 'text2', 'text3'];
 let i=0;
-refs[0].addEventListener('click', function(event){
-    event.preventDefault();
-    if(i!=0){
-        i--;
-        txt.textContent=texts[i];
-    }else{
-        i=0;
-        txt.textContent=texts[i];
-    }
+refs.forEach(function(ref){
+    ref.addEventListener('click', function(event){
+        event.preventDefault();
+        switch(ref.id){
+            case 'left':
+                if(i!=0){i--}else{i=0};
+                txt.textContent=texts[i];
+            break;
+            case 'right':
+                if(i!=2){i++}else{i=2};
+                txt.textContent=texts[i];
+            break;
+        };
+    })
 })
-refs[1].addEventListener('click', function(event){
-    event.preventDefault();
-    if(i!=2){
-        i++;
-        txt.textContent=texts[i];
-    }else{
-        i=2;
-        txt.textContent=texts[i];
-    }
-})
+
+
+
+
+
+
+
+    //     if(i!=0 && ref.id==='left'){
+    //         i--;
+    //         txt.textContent=texts[i];
+    //     }else{
+    //         i++;
+    //         txt.textContent=texts[i];
+    //     }
+    // })
+    // ref.addEventListener('click', function(event){
+    //     event.preventDefault();
+    //     if(i!=2){
+    //         i++;
+    //         txt.textContent=texts[i];
+    //     }else{
+    //         i=2;
+    //         txt.textContent=texts[i];
+    //     }
+    // }) 
