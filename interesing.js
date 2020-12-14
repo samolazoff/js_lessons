@@ -32,11 +32,6 @@
 
 // document.getElementById('hello') //возвращает элемент от тега до тега включая сами теги!!!!
 // console.dir(document.getElementById('hello'));//показывает сам элемент и к нему все методы!!!
-// console.log(document.getElementById('hello').textContent); 
-// document.getElementById('hello').textContent= 'JS';
-// document.getElementById('hello').style.color='red';
-// document.getElementById('hello').style.textAlign='center';
-// document.getElementById('hello').style.fontSize='80px';
 // document.getElementById('hello').style.backgroundColor='yellow';
 
 
@@ -69,7 +64,54 @@
 //     console.log(heading2.textContent);
 // }
 
-// const elem= document.querySelector('h1');
-// // elem.innerHTML='@@@@';    //changes text of tag
-// // elem.innerHTML='<br>Ooops'; //changes text of tag with new tag
-// console.log(elem.innerHTML);
+
+
+// *****************************************************************************
+// sliders
+
+
+
+// Для начала сделаем слайдер текста. Этот слайдер будет представлять собой див,
+//  в котором каждую секунду будет меняться текст.
+
+
+
+
+// const txt=document.querySelector('#txt');
+// let texts = ['text1', 'text2', 'text3'],
+//     i=0,
+//     getElem=function(){
+//         txt.textContent=texts[i];
+//         i<2?i++:i=0;
+//     };
+// setInterval(getElem,2000);
+
+// *****************************************************************************
+// Давайте теперь сделаем слайдер текста со стрелками. Это значит, что текст будет меняться
+//  не по таймеру, а по нажатию на стрелку. Добавим стрелки в наш HTML код:
+
+
+const txt=document.querySelector('#txt');
+const refs = document.querySelectorAll('a');
+let texts = ['text1', 'text2', 'text3'];
+let i=0;
+refs[0].addEventListener('click', function(event){
+    event.preventDefault();
+    if(i!=0){
+        i--;
+        txt.textContent=texts[i];
+    }else{
+        i=0;
+        txt.textContent=texts[i];
+    }
+})
+refs[1].addEventListener('click', function(event){
+    event.preventDefault();
+    if(i!=2){
+        i++;
+        txt.textContent=texts[i];
+    }else{
+        i=2;
+        txt.textContent=texts[i];
+    }
+})
