@@ -91,25 +91,25 @@
 //  не по таймеру, а по нажатию на стрелку. Добавим стрелки в наш HTML код:
 
 
-const txt=document.querySelector('#txt');
-const refs = document.querySelectorAll('a');
-let texts = ['text1', 'text2', 'text3'];
-let i=0;
-refs.forEach(function(ref){
-    ref.addEventListener('click', function(event){
-        event.preventDefault();
-        switch(ref.id){
-            case 'left':
-                if(i!=0){i--}else{i=0};
-                txt.textContent=texts[i];
-            break;
-            case 'right':
-                if(i!=2){i++}else{i=2};
-                txt.textContent=texts[i];
-            break;
-        };
-    })
-})
+// const txt=document.querySelector('#txt');
+// const refs = document.querySelectorAll('a');
+// let texts = ['text1', 'text2', 'text3'];
+// let i=0;
+// refs.forEach(function(ref){
+//     ref.addEventListener('click', function(event){
+//         event.preventDefault();
+//         switch(ref.id){
+//             case 'left':
+//                 if(i!=0){i--}else{i=0};
+//                 txt.textContent=texts[i];
+//             break;
+//             case 'right':
+//                 if(i!=2){i++}else{i=2};
+//                 txt.textContent=texts[i];
+//             break;
+//         };
+//     })
+// })
 
 
 
@@ -135,3 +135,28 @@ refs.forEach(function(ref){
     //         txt.textContent=texts[i];
     //     }
     // }) 
+
+// *****************************************************************************
+
+
+// SLIDER
+
+
+// const slides=document.querySelectorAll('.slide');
+// const arrows=document.querySelectorAll('.arrow');
+// let i=0;
+// arrows.forEach(function(arrow){
+//     arrow.addEventListener('click',function(){
+//         switch(arrow.id){
+//             case 'left': i!=0?i--:i=0;
+//                 break;
+//             case 'right':  i!=2?i++:i=2;
+//                 break;
+//             default: console.log('error');
+//                 break;
+//         }
+//         slides.forEach(slide=>{
+//             Array.prototype.indexOf.call(slides, slide)==i?slide.style.opacity='1':slide.style.opacity='0';
+//         })   
+//     })
+// })
